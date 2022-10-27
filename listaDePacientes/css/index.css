@@ -164,7 +164,7 @@ button[disabled=disabled], button:disabled {
 	padding: 10px;
 	margin: 10px 5px;
 	border-radius: 5px;
-	border-color: #ccc;
+	border: 1px solid #ccc;
 	width: 200px;
 	height: 35px;
 }

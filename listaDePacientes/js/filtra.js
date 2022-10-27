@@ -9,6 +9,10 @@ inputFiltro.addEventListener('input', function() {
             let pacienteAtual = pacientes[i]
             let tdNome = pacienteAtual.querySelector('.info-nome')
             let nome = tdNome.textContent
+            // let comparavel = nome.substr(0, this.value.length)
+            // let comparavelMinusculo = comparavel.toLowerCase()
+            // let valorDigitadoMinusculo = this.value.toLowerCase()
+            // if(!(valorDigitadoMinusculo == comparavelMinusculo)) {}
             const regex = new RegExp(this.value, 'i')
             if(!regex.test(nome)) {
                 pacienteAtual.classList.add('hidden')
